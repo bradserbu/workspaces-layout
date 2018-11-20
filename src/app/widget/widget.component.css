@@ -1,0 +1,9 @@
+:host {
+    position: absolute;
+    top: 0;
+    left: 0;
+    float: left;
+    font-size: 0.4em;
+    font-weight: normal;
+    line-height: 1em;
+}

@@ -1,0 +1,30 @@
+<html data-ng-app="FormApp">
+<head>
+	<title>Dynamic forms with AngularJS</title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>	
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"></script>
+	<script src="js/form.js"></script>
+</head>
+<body data-ng-controller="FormController">
+	<h1>Please enter your personal information:</h1>
+	<ul>
+		<li data-ng-repeat="message in messages">{{message}}</li>
+	</ul>
+	<script type="text/html" id="inputRowTemplate_TEXT">
+		<div>
+			<label></label>	<input type="text">
+		</div>
+	</script>
+	<script type="text/html" id="inputRowTemplate_SELECT">
+		<div>
+			<label></label>	<select>
+		</div>
+	</script>
+	<div id="dynamicForm">
+		<!-- To be populated dynamically based on the template. -->
+	</div>
+	<div>
+		<input type="button" data-ng-click="submit()" value="Submit the form">
+	</div>
+</body>
+</html>
