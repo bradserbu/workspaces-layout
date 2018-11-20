@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>TESTE</title>
+
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/jquery-ui.min.css" />
+
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/gridList.js"></script>
+		<script src="js/jquery.gridList.js"></script>
+		<script src="js/djangoGridGallery.js"></script>
+	</head>
+	<body>
+		<div id="dialog" title="Cell Settings">
+		    <div>
+		        <label>Size (Width x Height)</label>
+		        <span style="right: 0;">
+		            <input type="text" class="item_w" style="width: 35px;">
+		            x
+		            <input type="text" class="item_h" style="width: 35px;">
+		        </span>
+		    </div>
+		</div>
+		<div class="header">
+			<a href="#remove-column" class="button_header remove-column">- Column</a>
+    		<a href="#add-column" class="button_header add-column">+ Column</a>
+    		<a href="#add-cell" class="button_header add-cell">+ Cell</a>
+		</div>
+		<div class="grid-container">
+			<ul id="grid" class="grid" style="padding: 0;">
+			</ul>
+		</div>
+	</body>
+</html>
